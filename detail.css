@@ -323,6 +323,33 @@ h3.card-title.h6.h5-sm.h6-md a {
 
 
 
+@media (max-width: 576px) {
+  h1.h1.display-md-4.display-3-lg.fw-bold.mt-2.text-white {
+    font-size: 24px;
+}
+}
+
+@media (max-width: 445px) {
+  h1.h1.display-md-4.display-3-lg.fw-bold.mt-2.text-white {
+    font-size: 18px;
+}
+}
+
+
+@media (max-width: 400px)  {
+  h1.h1.display-md-4.display-3-lg.fw-bold.mt-2.text-white {
+    font-size: 16px;
+}
+}
+
+
+@media (min-width: 576px) and (max-width: 660px){
+  h1.h1.display-md-4.display-3-lg.fw-bold.mt-2.text-white {
+    font-size: 24px;
+}
+
+
+}
 
 
 

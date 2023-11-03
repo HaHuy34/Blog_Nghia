@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CKEditor 5 – Classic editor</title>
+    <!-- <script src="https://cdn.ckeditor.com/ckeditor5/40.0.0/classic/ckeditor.js"></script> -->
+    <!-- <script src="https://cdn.ckeditor.com/4.23.0-lts/standard/ckeditor.js"></script> -->
+    <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
+</head>
+<body>
+    <h1>Classic editor</h1>
+    <div id="editor">
+        <p>This is some sample content.</p>
+    </div>
+    <p>dsf sdfjh sdjfhjsdhf</p>
+
+<p><img alt="dd" src="http://localhost:8080/api/v1/files/4" style="height:675px; width:1200px" /></p>
+
+    <button id="save-button">Lưu bài viết</button>
+    <script>
+        // const textValue = document.getElementById("editor"); 
+        // ClassicEditor
+        //     .create( document.querySelector( '#editor' ) )
+        //     .catch( error => {
+        //         console.error( error );
+        //     } );
+        
+
+        CKEDITOR.replace( 'editor' );
+
+        // CKEDITOR.instances.editor.on('change', function() {
+        //     var editorData = CKEDITOR.instances.editor.getData();
+        //     console.log(editorData);
+        // });
+
+        // CKEDITOR.instances.editor.on('change', function() {
+        //     // Lấy nội dung CKEditor
+        //     var editorData = CKEDITOR.instances.editor.getData();
+            
+        //     // Gán nội dung CKEditor cho một biến hoặc sử dụng nó theo ý muốn
+        //     var contentForPost = editorData;
+            
+        //     // Hiển thị nội dung trong console.log
+        //     console.log(contentForPost);
+        // });
+
+        document.getElementById('save-button').addEventListener('click', function() {
+            // Lấy nội dung CKEditor khi người dùng nhấn nút "Lưu bài viết"
+            var contentForPost = CKEDITOR.instances.editor.getData();
+            console.log(`==========  \n ${contentForPost}`);
+            // Ở đây, bạn có thể gửi nội dung cho server hoặc xử lý nó theo nhu cầu của bạn.
+            // Ví dụ: Gửi nội dung qua AJAX request hoặc lưu vào cơ sở dữ liệu.
+        });
+    </script>
+</body>
+</html>
