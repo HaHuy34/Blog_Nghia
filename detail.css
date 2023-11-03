@@ -250,7 +250,6 @@ span.text-muted.dates.small {
 .block-title-4 {
     position: relative;
     margin-bottom: 1.5rem;
-    padding-bottom: 0.5rem;
     border-bottom: 2px solid #dee2e6;
 }
 
@@ -301,6 +300,10 @@ span.d-none.d-sm-inline.me-1 a{
     border: none;
 }
 
+aside.col-md-4.end-sidebar-lg .img-fluid {
+  width: 100%;
+}
+
 article.card.card-full.hover-a.mb-4 .row {
     padding: 0;
     margin: 0;
@@ -312,6 +315,10 @@ article.card.card-full.hover-a.mb-4 .row {
 
 h3.card-title.h6.h5-sm.h6-md a {
     font-size: 14px;
+}
+
+.col-md-4.end-sidebar-lg .col-3.col-md-4.pe-2.pe-md-0 {
+  padding: 0;
 }
 
 
