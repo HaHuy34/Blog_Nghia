@@ -1,207 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Import Icon -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./main.js">
-    <title>Document</title>
-  </head>
-  <body>
-    <header class="header header-logo">
-      <div class="container">
-        <img src="https://cdn.bongda24h.vn/images/logo-bongda24h.svg" alt="" />
-      </div>
-	    <div class="search-box">
-			<button class="btn-search"><i class='bx bx-search'></i></button>
-			<input type="text" class="input-search" placeholder="Type to Search...">
-  		</div>
-    </header>
-    <nav class="navication">
-      <div class="container">
-        <a href="./index.html"><i class="bx bx-home"></i></a>
-        <ul>
-          <li class="name-nav-header">
-            <a href="./detail.html">Video</a>
-          </li>
-          <li class="name-nav-header">
-            <a href="#">Tin nóng</a>
-          </li>
-          <li class="name-nav-header">
-            <a href="#">Asiad 2023</a>
-          </li>
-          <li class="name-nav-header">
-            <a href="#">Việt Nam</a>
-          </li>
-          <li class="name-nav-header">
-            <a href="#">Anh</a>
-          </li>
-          <li class="name-nav-header">
-            <a href="#">TBN</a>
-          </li>
-          <li class="name-nav-header">
-            <a href="#">Châu Âu</a>
-          </li>
-          <li class="name-nav-header">
-            <a href="#">Italy</a>
-          </li>
-          <li class="name-nav-header">
-            <a href="#">Đức</a>
-          </li>
-          <li class="name-nav-header">
-            <a href="#">Pháp</a>
-          </li>
-          <li class="name-nav-header">
-            <a href="#">Livescore</a>
-          </li>
-          <li class="name-nav-header">
-            <a href="#">Trực tiếp</a>
-          </li>
-          <li class="name-nav-header">
-            <a href="#">Bình luận</a>
-          </li>
-          <li class="name-nav-header">
-            <a href="#">Nhận định</a>
-          </li>
-          <li class="name-nav-header">
-            <a href="#">Chuyển nhượng</a>
-          </li>
-        </ul>
-        <a href="#" class="user-main">
-          <i class="bx bxs-user-circle"></i>
-          <div class="user-pp">
-            <ul>
-                <li>Đăng ký/Đăng nhập</li>
-                <li>Đăng suất</li>
-                <li>Quản trị</li>
-            </ul>
-          </div>
-        </a>
-      </div>
-    </nav>
 
-    <main class="main">
-      	<div class="container">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Import Icon -->
+	<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+	<link rel="stylesheet" href="./style.css" />
+	<link rel="stylesheet" href="./main.js">
+	<title>Document</title>
+</head>
+
+<body>
+	<!-- <div class="search-box">
+		<h1 class="search-title">Tìm Kiếm</h1>
+		<div class="search-main">
+			<div class="input-search-top">
+				<input type="text" placeholder="Nhập tìm kiếm....">
+				<i class='bx bx-search'></i>
+			</div>
+			<div class="main-content-search">
+				<label for="thoigian" class="inp-lable">
+					<h3 class="title-input">
+						Thoi gian
+					</h3>
+					<select name="" id="input-form">
+						<option value="all">Tat ca</option>
+						<option value="day">1 ngay qua</option>
+						<option value="week">1 tuan qua</option>
+						<option value="month">1 thang qua</option>
+						<option value="year">1 nam qua</option>
+					</select>
+				</label>
+				<label for="dangbai">
+					<h3 class="title-input">
+						Dang bai
+					</h3>
+					<select name="" id="input-form">
+						<option value="all">Tat ca</option>
+						<option value="text">Bai viet</option>
+						<option value="image">Anh</option>
+						<option value="video">Video</option>
+						<option value="topic">Chu de</option>
+					</select>
+				</label>
+			</div>
+		</div>
+	</div> -->
+	<header class="header header-logo">
+		<div class="container header-main-top">
+			<img src="https://cdn.bongda24h.vn/images/logo-bongda24h.svg" alt="" />
+			<a href="./search.html">
+				<i class='bx bx-search'></i>
+			</a>
+	</header>
+	<nav class="navication">
+		<div class="container">
+			<a href="./index.html"><i class="bx bx-home"></i></a>
+			<ul>
+				<li class="name-nav-header">
+					<a href="./detail.html">Video</a>
+				</li>
+				<li class="name-nav-header">
+					<a href="#">Tin nóng</a>
+				</li>
+				<li class="name-nav-header">
+					<a href="#">Asiad 2023</a>
+				</li>
+				<li class="name-nav-header">
+					<a href="#">Việt Nam</a>
+				</li>
+				<li class="name-nav-header">
+					<a href="#">Anh</a>
+				</li>
+				<li class="name-nav-header">
+					<a href="#">TBN</a>
+				</li>
+				<li class="name-nav-header">
+					<a href="#">Châu Âu</a>
+				</li>
+				<li class="name-nav-header">
+					<a href="#">Italy</a>
+				</li>
+				<li class="name-nav-header">
+					<a href="#">Đức</a>
+				</li>
+				<li class="name-nav-header">
+					<a href="#">Pháp</a>
+				</li>
+				<li class="name-nav-header">
+					<a href="#">Livescore</a>
+				</li>
+				<li class="name-nav-header">
+					<a href="#">Trực tiếp</a>
+				</li>
+				<li class="name-nav-header">
+					<a href="#">Bình luận</a>
+				</li>
+				<li class="name-nav-header">
+					<a href="#">Nhận định</a>
+				</li>
+				<li class="name-nav-header">
+					<a href="#">Chuyển nhượng</a>
+				</li>
+			</ul>
+			<a href="#" class="user-main">
+				<i class="bx bxs-user-circle"></i>
+				<div class="user-pp">
+					<ul>
+						<li>Đăng ký/Đăng nhập</li>
+						<li>Đăng xuất</li>
+						<li>Quản trị</li>
+					</ul>
+				</div>
+			</a>
+		</div>
+	</nav>
+
+	<main class="main">
+		<div class="container">
 			<div class="row">
-			<div class="col-12 mt-05">
-				<div class="row py-2 bre-main">
-				<div class="breaking-title">Breaking news</div>
-				<div class="content-breaking">
-					Google Employees Protest Secret Work on Censored Search Engine
-					for China
-				</div>
-				</div>
-				<div class="row featured-1 mb-5">
-				<div class="col-md-6 pb-05 pt-05 pe-md-05">
-					<div class="image-wrapper">
-					<img
-						src="https://demo.bootstrap.news/bootnews/assets/img/568x484/img1.jpg"
-						alt=""
-					/>
-					<div class="main-text-title">
-							<a class="heading-letter-spacing" href="#"></a>
-								<h2 class="title-name-br">
-								The world's first floating farm making waves in
-								Rotterdam
-								</h2></a
-							>
-							<div class="news-meta">
-								<span class="news-author">
-									by
-									<a href="#" class="text-white fw-bold">
-										Duy Nghia
-									</a>
-									<time datetime="2019-10-22" class="news-date">Oct 22, 2019</time>
-								</span>
-							</div>
-							</div>
+				<div class="col-12 mt-05">
+					<div class="row py-2 bre-main">
+						<div class="breaking-title">Breaking news</div>
+						<div class="content-breaking">
+							Google Employees Protest Secret Work on Censored Search Engine
+							for China
+						</div>
 					</div>
-				</div>
-				<div class="col-md-6 pt-05 ps-md-05">
-					<div class="row newsbox">
-					<div class="col-6">
-						<div class="image-wrapper">
-							<div class="flickity-viewport">
-							<img
-								src="https://demo.bootstrap.news/bootnews/assets/img/282x240/img1.jpg"
-								alt=""
-							/>
-							<div class="main-text-title">
-								<a href="#" class="bg-primary text-white buss">Business</a>
-								<a href="#">
-									<h2 class="h6 h4-sm h6-md h5-lg text-white my-1">Should you see the Fantastic Beasts sequel?</h2>
-								</a>
+					<div class="row featured-1 mb-5">
+						<div class="col-md-6 pb-05 pt-05 pe-md-05">
+							<div class="image-wrapper">
+								<img src="https://demo.bootstrap.news/bootnews/assets/img/568x484/img1.jpg" alt="" />
+								<div class="main-text-title">
+									<a class="heading-letter-spacing" href="#"></a>
+									<h2 class="title-name-br">
+										The world's first floating farm making waves in
+										Rotterdam
+									</h2></a>
+									<div class="news-meta">
+										<span class="news-author">
+											by
+											<a href="#" class="text-white fw-bold">
+												Duy Nghia
+											</a>
+											<time datetime="2019-10-22" class="news-date">Oct 22, 2019</time>
+										</span>
+									</div>
+								</div>
 							</div>
+						</div>
+						<div class="col-md-6 pt-05 ps-md-05">
+							<div class="row newsbox">
+								<div class="col-6">
+									<div class="image-wrapper">
+										<div class="flickity-viewport">
+											<img src="https://demo.bootstrap.news/bootnews/assets/img/282x240/img1.jpg"
+												alt="" />
+											<div class="main-text-title">
+												<a href="#" class="bg-primary text-white buss">Business</a>
+												<a href="#">
+													<h2 class="h6 h4-sm h6-md h5-lg text-white my-1">Should you see the
+														Fantastic Beasts sequel?</h2>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="image-wrapper">
+										<div class="flickity-viewport">
+											<img src="https://demo.bootstrap.news/bootnews/assets/img/282x240/img2.jpg"
+												alt="" />
+											<div class="main-text-title">
+												<a href="#" class="bg-primary text-white buss">Science</a>
+												<a href="#">
+													<h2 class="h6 h4-sm h6-md h5-lg text-white my-1">Three myths about
+														Florida elections recount</h2>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="image-wrapper">
+										<div class="flickity-viewport">
+											<img src="https://demo.bootstrap.news/bootnews/assets/img/282x240/img3.jpg"
+												alt="" />
+											<div class="main-text-title">
+												<a href="#" class="bg-primary text-white buss">Travel</a>
+												<a href="#">
+													<h2 class="h6 h4-sm h6-md h5-lg text-white my-1">Finding Empowerment
+														in Two Wheels and a Helmet</h2>
+												</a>
+											</div>
+										</div>
+									</div>
+
+								</div>
+								<div class="col-6">
+									<div class="image-wrapper">
+										<div class="flickity-viewport">
+											<img src="https://demo.bootstrap.news/bootnews/assets/img/282x240/img4.jpg"
+												alt="" />
+											<div class="main-text-title">
+												<a href="#" class="bg-primary text-white buss">Lifestyle</a>
+												<a href="#">
+													<h2 class="h6 h4-sm h6-md h5-lg text-white my-1">Ditch receipts and
+														four other tips to be a green shopper</h2>
+												</a>
+											</div>
+										</div>
+									</div>
+
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-6">
-						<div class="image-wrapper">
-							<div class="flickity-viewport">
-							<img
-								src="https://demo.bootstrap.news/bootnews/assets/img/282x240/img2.jpg"
-								alt=""
-							/>
-							<div class="main-text-title">
-								<a href="#" class="bg-primary text-white buss">Science</a>
-								<a href="#">
-									<h2 class="h6 h4-sm h6-md h5-lg text-white my-1">Three myths about Florida elections recount</h2>
-								</a>
-							</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-6">
-						<div class="image-wrapper">
-							<div class="flickity-viewport">
-							<img
-								src="https://demo.bootstrap.news/bootnews/assets/img/282x240/img3.jpg"
-								alt=""
-							/>
-							<div class="main-text-title">
-								<a href="#" class="bg-primary text-white buss">Travel</a>
-								<a href="#">
-									<h2 class="h6 h4-sm h6-md h5-lg text-white my-1">Finding Empowerment in Two Wheels and a Helmet</h2>
-								</a>
-							</div>
-							</div>
-						</div>
-						
-					</div>
-					<div class="col-6">
-						<div class="image-wrapper">
-							<div class="flickity-viewport">
-							<img
-								src="https://demo.bootstrap.news/bootnews/assets/img/282x240/img4.jpg"
-								alt=""
-							/>
-							<div class="main-text-title">
-								<a href="#" class="bg-primary text-white buss">Lifestyle</a>
-								<a href="#">
-									<h2 class="h6 h4-sm h6-md h5-lg text-white my-1">Ditch receipts and four other tips to be a green shopper</h2>
-								</a>
-							</div>
-							</div>
-						</div>
-						
-					</div>
-					</div>
-				</div>
 				</div>
 			</div>
-			</div>  
 
 			<div class="row">
 				<div class="col-md-8">
@@ -214,15 +234,19 @@
 							<div class="col-lg-6">
 								<div class="cart-full">
 									<a href="#">
-										<img src="https://demo.bootstrap.news/bootnews/assets/img/360x202/img1.jpg" class="img-fluid" alt="">
+										<img src="https://demo.bootstrap.news/bootnews/assets/img/360x202/img1.jpg"
+											class="img-fluid" alt="">
 									</a>
 									<div class="card-body">
-										<h2 class="card-title">GB's Bankes wins snowboard cross silver at World Champs</h2>
+										<h2 class="card-title">GB's Bankes wins snowboard cross silver at World Champs
+										</h2>
 										<div class="card-text mb-2 text-muted small">
 											<span class="d-none d-sm-inline me-1">Duy Nghia</span>
 											<time datetime="2019-10-22">Oct 22, 2019</time>
 										</div>
-										<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+										<p class="card-text">This is a wider card with supporting text below as a
+											natural lead-in to additional content. This content is a little bit longer.
+										</p>
 									</div>
 								</div>
 							</div>
@@ -230,7 +254,8 @@
 								<article class="card card-full hover-a mb-4">
 									<div class="row">
 										<div class="col-3 col-md-4 pe-2 pe-md-0">
-											<img src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img1.jpg" alt="">
+											<img src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img1.jpg"
+												alt="">
 										</div>
 										<div class="col-9 col-md-8">
 											<div class="card-body pt-0">
@@ -247,12 +272,14 @@
 								<article class="card card-full hover-a mb-4">
 									<div class="row">
 										<div class="col-3 col-md-4 pe-2 pe-md-0">
-											<img src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img2.jpg" alt="">
+											<img src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img2.jpg"
+												alt="">
 										</div>
 										<div class="col-9 col-md-8">
 											<div class="card-body pt-0">
 												<h3 class="card-title-child h6 h5-sm h6-lg">
-													<a href="#">Dale Earnhardt Jr. Returns to the Racetrack and an Old Hobby</a>
+													<a href="#">Dale Earnhardt Jr. Returns to the Racetrack and an Old
+														Hobby</a>
 												</h3>
 												<div class="card-text small text-muted">
 													<time datetime="2019-10-22">Oct 22, 2019</time>
@@ -264,12 +291,14 @@
 								<article class="card card-full hover-a mb-4">
 									<div class="row">
 										<div class="col-3 col-md-4 pe-2 pe-md-0">
-											<img src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img3.jpg" alt="">
+											<img src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img3.jpg"
+												alt="">
 										</div>
 										<div class="col-9 col-md-8">
 											<div class="card-body pt-0">
 												<h3 class="card-title-child h6 h5-sm h6-lg">
-													<a href="#">Carmelo Anthony Officially Signs with the Houston Rockets</a>
+													<a href="#">Carmelo Anthony Officially Signs with the Houston
+														Rockets</a>
 												</h3>
 												<div class="card-text small text-muted">
 													<time datetime="2019-10-22">Oct 22, 2019</time>
@@ -281,12 +310,226 @@
 								<article class="card card-full hover-a mb-4">
 									<div class="row">
 										<div class="col-3 col-md-4 pe-2 pe-md-0">
-											<img src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img4.jpg" alt="">
+											<img src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img4.jpg"
+												alt="">
 										</div>
 										<div class="col-9 col-md-8">
 											<div class="card-body pt-0">
 												<h3 class="card-title-child h6 h5-sm h6-lg">
-													<a href="#">Jacob deGrom Goes the Distance as Mets Top the Phillies</a>
+													<a href="#">Jacob deGrom Goes the Distance as Mets Top the
+														Phillies</a>
+												</h3>
+												<div class="card-text small text-muted">
+													<time datetime="2019-10-22">Oct 22, 2019</time>
+												</div>
+											</div>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="block-area">
+						<div class="block-title-6">
+							<h4 class="h5 border-primary"></h4>
+							<span class="bg-primary text-white">Sports</span>
+						</div>
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="cart-full">
+									<a href="#">
+										<img src="https://demo.bootstrap.news/bootnews/assets/img/360x202/img1.jpg"
+											class="img-fluid" alt="">
+									</a>
+									<div class="card-body">
+										<h2 class="card-title">GB's Bankes wins snowboard cross silver at World Champs
+										</h2>
+										<div class="card-text mb-2 text-muted small">
+											<span class="d-none d-sm-inline me-1">Duy Nghia</span>
+											<time datetime="2019-10-22">Oct 22, 2019</time>
+										</div>
+										<p class="card-text">This is a wider card with supporting text below as a
+											natural lead-in to additional content. This content is a little bit longer.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 main-detal-news">
+								<article class="card card-full hover-a mb-4">
+									<div class="row">
+										<div class="col-3 col-md-4 pe-2 pe-md-0">
+											<img src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img1.jpg"
+												alt="">
+										</div>
+										<div class="col-9 col-md-8">
+											<div class="card-body pt-0">
+												<h3 class="card-title-child h6 h5-sm h6-lg">
+													<a href="#">Yankees Party Like It’s 1998, at Least for a Day</a>
+												</h3>
+												<div class="card-text small text-muted">
+													<time datetime="2019-10-22">Oct 22, 2019</time>
+												</div>
+											</div>
+										</div>
+									</div>
+								</article>
+								<article class="card card-full hover-a mb-4">
+									<div class="row">
+										<div class="col-3 col-md-4 pe-2 pe-md-0">
+											<img src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img2.jpg"
+												alt="">
+										</div>
+										<div class="col-9 col-md-8">
+											<div class="card-body pt-0">
+												<h3 class="card-title-child h6 h5-sm h6-lg">
+													<a href="#">Dale Earnhardt Jr. Returns to the Racetrack and an Old
+														Hobby</a>
+												</h3>
+												<div class="card-text small text-muted">
+													<time datetime="2019-10-22">Oct 22, 2019</time>
+												</div>
+											</div>
+										</div>
+									</div>
+								</article>
+								<article class="card card-full hover-a mb-4">
+									<div class="row">
+										<div class="col-3 col-md-4 pe-2 pe-md-0">
+											<img src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img3.jpg"
+												alt="">
+										</div>
+										<div class="col-9 col-md-8">
+											<div class="card-body pt-0">
+												<h3 class="card-title-child h6 h5-sm h6-lg">
+													<a href="#">Carmelo Anthony Officially Signs with the Houston
+														Rockets</a>
+												</h3>
+												<div class="card-text small text-muted">
+													<time datetime="2019-10-22">Oct 22, 2019</time>
+												</div>
+											</div>
+										</div>
+									</div>
+								</article>
+								<article class="card card-full hover-a mb-4">
+									<div class="row">
+										<div class="col-3 col-md-4 pe-2 pe-md-0">
+											<img src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img4.jpg"
+												alt="">
+										</div>
+										<div class="col-9 col-md-8">
+											<div class="card-body pt-0">
+												<h3 class="card-title-child h6 h5-sm h6-lg">
+													<a href="#">Jacob deGrom Goes the Distance as Mets Top the
+														Phillies</a>
+												</h3>
+												<div class="card-text small text-muted">
+													<time datetime="2019-10-22">Oct 22, 2019</time>
+												</div>
+											</div>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="block-area">
+						<div class="block-title-6">
+							<h4 class="h5 border-primary"></h4>
+							<span class="bg-primary text-white">Sports</span>
+						</div>
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="cart-full">
+									<a href="#">
+										<img src="https://demo.bootstrap.news/bootnews/assets/img/360x202/img1.jpg"
+											class="img-fluid" alt="">
+									</a>
+									<div class="card-body">
+										<h2 class="card-title">GB's Bankes wins snowboard cross silver at World Champs
+										</h2>
+										<div class="card-text mb-2 text-muted small">
+											<span class="d-none d-sm-inline me-1">Duy Nghia</span>
+											<time datetime="2019-10-22">Oct 22, 2019</time>
+										</div>
+										<p class="card-text">This is a wider card with supporting text below as a
+											natural lead-in to additional content. This content is a little bit longer.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 main-detal-news">
+								<article class="card card-full hover-a mb-4">
+									<div class="row">
+										<div class="col-3 col-md-4 pe-2 pe-md-0">
+											<img src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img1.jpg"
+												alt="">
+										</div>
+										<div class="col-9 col-md-8">
+											<div class="card-body pt-0">
+												<h3 class="card-title-child h6 h5-sm h6-lg">
+													<a href="#">Yankees Party Like It’s 1998, at Least for a Day</a>
+												</h3>
+												<div class="card-text small text-muted">
+													<time datetime="2019-10-22">Oct 22, 2019</time>
+												</div>
+											</div>
+										</div>
+									</div>
+								</article>
+								<article class="card card-full hover-a mb-4">
+									<div class="row">
+										<div class="col-3 col-md-4 pe-2 pe-md-0">
+											<img src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img2.jpg"
+												alt="">
+										</div>
+										<div class="col-9 col-md-8">
+											<div class="card-body pt-0">
+												<h3 class="card-title-child h6 h5-sm h6-lg">
+													<a href="#">Dale Earnhardt Jr. Returns to the Racetrack and an Old
+														Hobby</a>
+												</h3>
+												<div class="card-text small text-muted">
+													<time datetime="2019-10-22">Oct 22, 2019</time>
+												</div>
+											</div>
+										</div>
+									</div>
+								</article>
+								<article class="card card-full hover-a mb-4">
+									<div class="row">
+										<div class="col-3 col-md-4 pe-2 pe-md-0">
+											<img src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img3.jpg"
+												alt="">
+										</div>
+										<div class="col-9 col-md-8">
+											<div class="card-body pt-0">
+												<h3 class="card-title-child h6 h5-sm h6-lg">
+													<a href="#">Carmelo Anthony Officially Signs with the Houston
+														Rockets</a>
+												</h3>
+												<div class="card-text small text-muted">
+													<time datetime="2019-10-22">Oct 22, 2019</time>
+												</div>
+											</div>
+										</div>
+									</div>
+								</article>
+								<article class="card card-full hover-a mb-4">
+									<div class="row">
+										<div class="col-3 col-md-4 pe-2 pe-md-0">
+											<img src="https://demo.bootstrap.news/bootnews/assets/img/115x80/img4.jpg"
+												alt="">
+										</div>
+										<div class="col-9 col-md-8">
+											<div class="card-body pt-0">
+												<h3 class="card-title-child h6 h5-sm h6-lg">
+													<a href="#">Jacob deGrom Goes the Distance as Mets Top the
+														Phillies</a>
 												</h3>
 												<div class="card-text small text-muted">
 													<time datetime="2019-10-22">Oct 22, 2019</time>
@@ -302,20 +545,23 @@
 				</div>
 				<div class="col-md-4 end-sidebar-lg">
 					<aside class="widget">
-							<div class="block-title-4">
-								<h4 class="h5 title-arrow">
-									<span>Latest news</span>
-								</h4>
-							</div>
-							<div class="big-post">
-								<article class="card card-full hover-a mb-4">
-									<!--thumbnail-->
-									<div class="ratio_360-202 image-wrapper">
+						<div class="block-title-4">
+							<h4 class="h5 title-arrow">
+								<span>Latest news</span>
+							</h4>
+						</div>
+						<div class="big-post">
+							<article class="card card-full hover-a mb-4">
+								<!--thumbnail-->
+								<div class="ratio_360-202 image-wrapper">
 									<a href="#">
-										<img class="img-fluid lazy entered loaded" src="https://demo.bootstrap.news/bootnews/assets/img/360x202/img55.jpg" data-src="../../assets/img/360x202/img55.jpg" alt="Image description" data-ll-status="loaded">
+										<img class="img-fluid lazy entered loaded"
+											src="https://demo.bootstrap.news/bootnews/assets/img/360x202/img55.jpg"
+											data-src="../../assets/img/360x202/img55.jpg" alt="Image description"
+											data-ll-status="loaded">
 									</a>
-									</div>
-									<div class="card-body">
+								</div>
+								<div class="card-body">
 									<!--title-->
 									<h2 class="card-title h1-sm h3-md">
 										<a href="#">MotoGP: Which team needs what in 2019?</a>
@@ -323,103 +569,109 @@
 									<!-- author & date -->
 									<div class="card-text mb-2 text-muted small">
 										<span class="d-none d-sm-inline me-1">
-										<a class="fw-bold" href="#">John Doe</a>
+											<a class="fw-bold" href="#">John Doe</a>
 										</span>
 										<time datetime="2019-10-22">Oct 22, 2019</time>
 									</div>
 									<!--description-->
-									<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-									</div>
-								</article>
-							</div>
+									<p class="card-text">This is a wider card with supporting text below as a natural
+										lead-in to additional content. This content is a little bit longer.</p>
+								</div>
+							</article>
+						</div>
 					</aside>
 					<div class="small-post">
 						<!--post list-->
 						<article class="card card-full hover-a mb-4">
 							<div class="row">
-							<!--thumbnail-->
-							<div class="col-3 col-md-4 pe-2 pe-md-0">
-								<div class="ratio_110-77 image-wrapper">
-								<a href="#">
-									<img class="img-fluid lazy entered loaded" src="https://demo.bootstrap.news/bootnews/assets/img/110x77/img5.jpg" data-src="../../assets/img/110x77/img5.jpg" alt="Image description" data-ll-status="loaded">
-								</a>
+								<!--thumbnail-->
+								<div class="col-3 col-md-4 pe-2 pe-md-0">
+									<div class="ratio_110-77 image-wrapper">
+										<a href="#">
+											<img class="img-fluid lazy entered loaded"
+												src="https://demo.bootstrap.news/bootnews/assets/img/110x77/img5.jpg"
+												data-src="../../assets/img/110x77/img5.jpg" alt="Image description"
+												data-ll-status="loaded">
+										</a>
+									</div>
 								</div>
-							</div>
-							<!-- title & date -->
-							<div class="col-9 col-md-8">
-								<div class="card-body pt-0">
-								<h3 class="card-title h6 h5-sm h6-md">
-									<a href="#">Take the kids to Windermere Jetty, Lake District</a>
-								</h3>
-								<div class="card-text small text-muted">
-									<time datetime="2019-10-16">Oct 16, 2019</time>
+								<!-- title & date -->
+								<div class="col-9 col-md-8">
+									<div class="card-body pt-0">
+										<h3 class="card-title h6 h5-sm h6-md">
+											<a href="#">Take the kids to Windermere Jetty, Lake District</a>
+										</h3>
+										<div class="card-text small text-muted">
+											<time datetime="2019-10-16">Oct 16, 2019</time>
+										</div>
+									</div>
 								</div>
-								</div>
-							</div>
 							</div>
 						</article>
 						<article class="card card-full hover-a mb-4">
 							<div class="row">
-							<!--thumbnail-->
-							<div class="col-3 col-md-4 pe-2 pe-md-0">
-								<div class="ratio_110-77 image-wrapper">
-								<a href="#">
-									<img class="img-fluid lazy entered loaded" src="https://demo.bootstrap.news/bootnews/assets/img/110x77/img6.jpg" data-src="../../assets/img/110x77/img5.jpg" alt="Image description" data-ll-status="loaded">
-								</a>
+								<!--thumbnail-->
+								<div class="col-3 col-md-4 pe-2 pe-md-0">
+									<div class="ratio_110-77 image-wrapper">
+										<a href="#">
+											<img class="img-fluid lazy entered loaded"
+												src="https://demo.bootstrap.news/bootnews/assets/img/110x77/img6.jpg"
+												data-src="../../assets/img/110x77/img5.jpg" alt="Image description"
+												data-ll-status="loaded">
+										</a>
+									</div>
 								</div>
-							</div>
-							<!-- title & date -->
-							<div class="col-9 col-md-8">
-								<div class="card-body pt-0">
-								<h3 class="card-title h6 h5-sm h6-md">
-									<a href="#">Take the kids to Windermere Jetty, Lake District</a>
-								</h3>
-								<div class="card-text small text-muted">
-									<time datetime="2019-10-16">Oct 16, 2019</time>
+								<!-- title & date -->
+								<div class="col-9 col-md-8">
+									<div class="card-body pt-0">
+										<h3 class="card-title h6 h5-sm h6-md">
+											<a href="#">Take the kids to Windermere Jetty, Lake District</a>
+										</h3>
+										<div class="card-text small text-muted">
+											<time datetime="2019-10-16">Oct 16, 2019</time>
+										</div>
+									</div>
 								</div>
-								</div>
-							</div>
 							</div>
 						</article>
 					</div>
 					<aside class="widget">
-                        <div class="p-4 border bg-light-dark text-center mb-4">
-                          <h4>Get Updates</h4>
-                          <p class="text-dark-light">Subscribe our newsletter to get the last update into your inbox!</p>
-                          <div class="mx-auto">
-                            <form id="subscribe" class="needs-validation" action="#" novalidate="">
-                              <div class="input-group">
-                                <input type="email" class="form-control" name="email" required="" aria-label="email form" placeholder="Enter your email address" fdprocessedid="909qnm">
-                                <button class="btn btn-primary" type="submit" fdprocessedid="qzu3s">Subscribe</button>
-                                <div class="invalid-feedback">
-                                  Please insert email address.
-                                </div>
-                              </div>
-                            </form>
-                          </div>
-                        </div>
-                    </aside>
+						<div class="p-4 border bg-light-dark text-center mb-4">
+							<h4>Get Updates</h4>
+							<p class="text-dark-light">Subscribe our newsletter to get the last update into your inbox!
+							</p>
+							<div class="mx-auto">
+								<form id="subscribe" class="needs-validation" action="#" novalidate="">
+									<div class="input-group">
+										<input type="email" class="form-control" name="email" required=""
+											aria-label="email form" placeholder="Enter your email address"
+											fdprocessedid="909qnm">
+										<button class="btn btn-primary" type="submit"
+											fdprocessedid="qzu3s">Subscribe</button>
+										<div class="invalid-feedback">
+											Please insert email address.
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</aside>
 				</div>
 			</div>
-    	</div>
-    </main>
+		</div>
+	</main>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+</body>
+
 </html>
