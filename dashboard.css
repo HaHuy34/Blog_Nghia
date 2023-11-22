@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+/* Style the thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #888 transparent;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+.main-title {
+  margin: 100px;
+}
+
+/* Todo: Start col-md-3 */
+
+.sidebar-start {
+  background-color: #f8f9fa;
+}
+
+.list-unstyled li {
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 17px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border: 1px solid #f8f9fa;
+}
+
+.list-unstyled li:first-child,
+.list-unstyled li:hover {
+  border: 1px solid #dee2e6;
+  border-right: 1px solid #f8f9fa;
+}
+
+.st-cl {
+  color: #4f46e5;
+}
+.list-unstyled li:hover a,
+.list-unstyled li:hover i {
+  color: #4f46e5;
+}
+.list-unstyled li i {
+  font-size: 17px;
+}
+/* Todo: End col-md-3 */
+/* -------------------------------------------------- */
+
+/* Todo: Start col-md-9 */
+
+.dashboard-area-top {
+  text-align: center;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  padding: 2rem;
+}
+.name-avatar h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.social-main ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-main ul {
+  font-size: 30px;
+}
+
+.main-bottom-title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.avarta-main img {
+  border-radius: 50%;
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.dashboard-area-bottom {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  padding: 2rem;
+  margin-top: 20px;
+}
+
+.main-bottom-title p,
+.main-bottom-title h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.remove {
+  margin: 10px 0;
+  padding: 5px;
+  background-color: #bb2d3b;
+  color: #fff;
+  border-radius: 0.2rem;
+}
+
+thead th {
+  padding: 5px;
+}
+
+tbody td {
+  padding: 15px 10px;
+}
+
+.remove:hover {
+  color: #fff;
+  background-color: #ad1726;
+}
+
+.table-striped {
+  width: 100%;
+}
+
+.action-main {
+  width: 100px;
+  text-align: center;
+}
+
+.remove-man {
+  text-align: end;
+}
+
+#noArticlesMessage h1 {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+
+/* Todo: End col-md-9 */

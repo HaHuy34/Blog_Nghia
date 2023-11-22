@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dashboard.css" />
+    <title>Thanh toán</title>
+  </head>
+  <body>
+    <main class="main-title">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-3">
+            <div class="sidebar-start">
+              <ul class="list-unstyled">
+                <li onclick="showProfile()">
+                  <a href="#" class="sidebar-item">Profile</a>
+                  <span><i class="bx bx-user"></i></span>
+                </li>
+                <li onclick="showFavorite()">
+                  <a href="#" class="sidebar-item bgt">Favorite</a
+                  ><span><i class="bx bx-heart"></i></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-9">
+            <div class="dashboard-area" id="dashboardArea">
+              <div class="dashboard-area-top">
+                <div class="avarta-main">
+                  <img
+                    src="https://demo.bootstrap.news/bootnews/assets/img/avatar/avatar1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="name-avatar"><h3>@NghiaDuy</h3></div>
+                <div class="social-main">
+                  <ul>
+                    <li><i class="bx bxl-youtube"></i></li>
+                    <li><i class="bx bxl-instagram-alt"></i></li>
+                    <li><i class="bx bxl-github"></i></li>
+                    <li><i class="bx bxl-twitter"></i></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="dashboard-area-bottom">
+                <h3>Nghia Duy</h3>
+                <div class="main-bottom-title">
+                  <span>
+                    <h6>Jobs:</h6>
+                    <p>Writter</p>
+                  </span>
+                  <span
+                    ><h6>About:</h6>
+                    <p>
+                      Hello my name is Jenifer, My passion is writting. I hope
+                      you enjoy with my article.
+                    </p></span
+                  >
+                  <span
+                    ><h6>Address:</h6>
+                    <p>Street 12 vo 05, California, United States</p></span
+                  >
+                  <span
+                    ><h6>Phone:</h6>
+                    <p>+1 987654321</p></span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="favorite-main" id="favorite-th" style="display: none">
+              <h4>Favorite Article</h4>
+              <table class="table-striped">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Post title</th>
+                    <th></th>
+                    <th class="action-main">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr id="article1">
+                    <td></td>
+                    <td>
+                      Toyota Sienna rates marginal in passenger-side overlap
+                      crash test
+                    </td>
+                    <td></td>
+                    <td class="remove-man">
+                      <a
+                        href="#"
+                        class="remove"
+                        onclick="removeArticle('article1')"
+                        >Remove</a
+                      >
+                    </td>
+                  </tr>
+                  <tr id="article2">
+                    <td></td>
+                    <td>Another Article Title</td>
+                    <td></td>
+                    <td class="remove-man">
+                      <a
+                        href="#"
+                        class="remove"
+                        onclick="removeArticle('article2')"
+                        >Remove</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div id="noArticlesMessage" style="display: none">
+                <h1>No favorite articles available</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="./dashboard.js"></script>
+  </body>
+</html>
