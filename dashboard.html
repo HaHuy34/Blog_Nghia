@@ -38,10 +38,20 @@
             <div class="dashboard-area" id="dashboardArea">
               <div class="dashboard-area-top">
                 <div class="avarta-main">
-                  <img
-                    src="https://demo.bootstrap.news/bootnews/assets/img/avatar/avatar1.png"
-                    alt=""
-                  />
+                  <label for="avatarInput">
+                    <img
+                      id="userAvatar"
+                      src="https://demo.bootstrap.news/bootnews/assets/img/avatar/avatar1.png"
+                      alt="User Avatar"
+                    />
+                    <input
+                      type="file"
+                      id="avatarInput"
+                      style="display: none"
+                      accept="image/*"
+                      onchange="changeAvatar(event)"
+                    />
+                  </label>
                 </div>
                 <div class="name-avatar"><h3>@NghiaDuy</h3></div>
                 <div class="social-main">

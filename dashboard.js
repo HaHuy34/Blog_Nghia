@@ -41,3 +41,19 @@ function removeArticle(articleId) {
     }
   }
 }
+
+
+function changeAvatar(event) {
+  var input = event.target;
+  var reader = new FileReader();
+
+  reader.onload = function () {
+    var image = document.getElementById("userAvatar");
+    image.src = reader.result;
+  };
+
+  if (input.files && input.files[0]) {
+    reader.readAsDataURL(input.files[0]);
+  }
+}
+

@@ -110,8 +110,10 @@ ul li {
 .avarta-main img {
   border-radius: 50%;
   width: 100px;
-  height: auto;
+  height: 100px;
   margin-bottom: 10px;
+  object-fit: cover;
+  cursor: pointer;
 }
 
 .dashboard-area-bottom {
