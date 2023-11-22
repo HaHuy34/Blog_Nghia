@@ -26,63 +26,91 @@ ul li {
 }
 
 /* Todo: Start Search */
-.search-box {
-  width: fit-content;
-  height: fit-content;
-  position: relative;
-}
-.input-search {
-  height: 35px;
-  width: 25px;
-  border-style: none;
-  padding: 10px;
-  font-size: 18px;
-  letter-spacing: 2px;
-  outline: none;
-  border-radius: 25px;
-  transition: all 0.5s ease-in-out;
-  background-color: #ffffff;
-  box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px,
-    rgba(0, 0, 0, 0.117647) 0px 1px 4px;
-  padding-right: 28px;
-  color: #000000;
-}
-.input-search::placeholder {
-  color: rgba(84, 82, 82);
-  font-size: 15px;
-}
-.btn-search {
-  width: 35px;
-  height: 35px;
-  border-style: none;
-  font-size: 20px;
-  font-weight: bold;
-  outline: none;
-  cursor: pointer;
-  border-radius: 50%;
-  position: absolute;
-  right: 0px;
-  top: 2px;
-  color: #000000;
-  background-color: transparent;
-  pointer-events: painted;
+
+.header-main-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.search-box button:focus {
+.header-main-top i{
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.search-box {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.btn-search {
+  border: none;
+  background-color: #fff;
+}
+
+.main-content-search {
+  display: flex;
+}
+
+.search-title {
+  font-size: 16px;
+}
+
+.input-search-top ::placeholder {
+  font-size: 13px;
+}
+
+.input-search-top {
+  position: relative;
+  margin-bottom: 15px;
+  /* width: 77%; */
+}
+
+.input-search-top i {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  font-size: 20px;
+  transform: translate(-50%, -50%);
+  color: #bdbdbd;
+  cursor: pointer;
+}
+
+.input-search-top input {
+  padding: 10px 50px 10px 12px;
+  border: 1px solid #E5E5E5;
+  border-radius: 3px;
   outline: none;
+  font-size: 14px;
+  width: 100%;
 }
-.btn-search:focus ~ .input-search {
-  width: 300px;
-  border-radius: 0px;
-  background-color: transparent;
-  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+
+.search-main {
+
 }
-.input-search:focus {
-  width: 300px;
-  border-radius: 0px;
-  background-color: transparent;
-  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+
+.inp-lable {
+  margin-right: 15px;
 }
+
+.title-input {
+  font-size: 14px;
+    color: #757575;
+}
+
+#input-form{
+  font-size: 14px;
+  padding: 10px 5px;
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+}
+
+
+.main-content-search label{
+  width: 30%;
+  
+}
+
 
 /* Todo: End Search */
 
@@ -169,6 +197,8 @@ header.header {
 .user-pp ul li:hover {
   color: blue;
 }
+
+
 /* Todo: End Header */
 
 /* --------------------------------------------------------------------- */
