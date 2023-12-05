@@ -234,8 +234,18 @@ header.header {
   height: auto;
 }
 
+.col-md-6.pt-05.ps-md-05 {
+  display: grid;
+  gap: 17px;
+}
+
 .featured-1 .col-6 {
-  padding-bottom: 26px;
+  /* padding-bottom: 26px; */
+}
+
+.featured-1 .col-6:nth-child(3),
+.featured-1 .col-6:nth-child(4) {
+  padding-top: 10px;
 }
 
 .title-name-br {
@@ -631,10 +641,14 @@ footer .logo {
   bottom: 0;
   right: 0%;
   left: 50%;
-  transform: translate(-50%,0%) !important;
+  transform: translate(-50%, 0%) !important;
   z-index: 99999999999999999999999999;
   transition: transform 0.3s ease-in-out, position 0.3s ease-in-out;
   display: none;
+}
+
+.col-md-6.pb-05.pt-05.pe-md-05 {
+  /* height: fit-content; */
 }
 
 .gif-qc img {
@@ -653,8 +667,8 @@ footer .logo {
   }
 
   .gif-qc {
-  display: block;
-}
+    display: block;
+  }
 }
 @media (min-width: 768px) {
   .title-name-br {
