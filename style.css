@@ -8,6 +8,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-family: "Poppins", sans-serif;
+  background-color: red;
 }
 
 a {
@@ -588,8 +589,73 @@ footer .logo {
 }
 /* Todo: End Footer */
 
+/* Todo: Start Advertisement */
+
+.advertisement01 {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  width: 200px;
+}
+
+.advertisement02 {
+  position: fixed;
+  top: 100px;
+  right: 0;
+  width: 200px;
+}
+
+.fixed-image {
+  width: 100%;
+  height: auto;
+}
+
+.ads-qc {
+  position: relative;
+}
+
+.ads-qc i {
+  position: absolute;
+  font-size: 24px;
+  color: #ffffff;
+  right: 0;
+  cursor: pointer;
+}
+.gif-qc .ads-qc {
+  height: 170px;
+}
+
+.gif-qc {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  right: 0%;
+  left: 50%;
+  transform: translate(-50%,0%) !important;
+  z-index: 99999999999999999999999999;
+  transition: transform 0.3s ease-in-out, position 0.3s ease-in-out;
+  display: none;
+}
+
+.gif-qc img {
+  height: 100%;
+  width: 100%;
+}
+
+/* Todo: End Advertisement */
+
 /* Todo: Rreponsive */
 
+@media (max-width: 768px) {
+  .advertisement01,
+  .advertisement02 {
+    display: none;
+  }
+
+  .gif-qc {
+  display: block;
+}
+}
 @media (min-width: 768px) {
   .title-name-br {
     font-size: 1.375rem;
