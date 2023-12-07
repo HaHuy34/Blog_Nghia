@@ -25,6 +25,28 @@ ul li {
   list-style: none;
 }
 
+.huy span {
+  position: relative;
+  margin-right: 20px;
+  width: fit-content;
+}
+
+.huy span::before {
+  position: absolute;
+  top: 54%;
+  left: 117%;
+  transform: translate(60%, -50%);
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.huy span:last-child::before {
+  background-color: #ffffff;
+}
+
 /* Todo: Start Header */
 .navication ul {
   display: flex;
@@ -211,7 +233,7 @@ h4.h5.border-primary.border-2 {
 }
 
 .avatar-md {
-    margin-right: 1rem;
+  margin-right: 1rem;
 }
 
 .title-comments {
@@ -224,9 +246,9 @@ h4.h5.border-primary.border-2 {
 }
 
 .authors {
-    font-size: 15px;
-    color: #4f46e5;
-    font-weight: 700;
+  font-size: 15px;
+  color: #4f46e5;
+  font-weight: 700;
 }
 
 span.text-muted.dates.small {
@@ -234,70 +256,68 @@ span.text-muted.dates.small {
 }
 
 .comment-content {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 .comment-reply {
-    font-size: 15px;
-    color: #4f46e5;
-    text-decoration: none !important;
+  font-size: 15px;
+  color: #4f46e5;
+  text-decoration: none !important;
 }
 
 .comment-list li {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .block-title-4 {
-    position: relative;
-    margin-bottom: 1.5rem;
-    border-bottom: 2px solid #dee2e6;
+  position: relative;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #dee2e6;
 }
-
 
 .title-arrow span {
-    font-size: 16px;
+  font-size: 16px;
 }
 
-
 .title-arrow:before {
-    content: "";
-    width: 2.5rem;
-    height: 2px;
-    position: absolute;
-    top: 100%;
-    background: #4f46e5;
+  content: "";
+  width: 2.5rem;
+  height: 2px;
+  position: absolute;
+  top: 100%;
+  background: #4f46e5;
 }
 
 .img-block img {
-    width: 100%;
-    margin-bottom: 1.9rem;
+  width: 100%;
+  margin-bottom: 1.9rem;
 }
 
 .widget .card {
-    border: none;
+  border: none;
 }
 
 .widget .card-body {
-    padding: 0;
+  padding: 0;
 }
 
-h2.card-title.h1-sm.h3-md a{
-    font-size: 20px;
-text-decoration: none;
-color: #000 ;
+h2.card-title.h1-sm.h3-md a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #000;
 }
 
-span.d-none.d-sm-inline.me-1 a{
-    color: #4f46e5 !important;
-    margin-right: 5px;
+span.d-none.d-sm-inline.me-1 a {
+  color: #4f46e5 !important;
+  margin-right: 5px;
 }
 
 .widget .card-text {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 .small-post .card {
-    border: none;
+  border: none;
 }
 
 aside.col-md-4.end-sidebar-lg .img-fluid {
@@ -305,64 +325,45 @@ aside.col-md-4.end-sidebar-lg .img-fluid {
 }
 
 article.card.card-full.hover-a.mb-4 .row {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .small-post .card-body {
-    padding: 0;
+  padding: 0;
 }
 
 h3.card-title.h6.h5-sm.h6-md a {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .col-md-4.end-sidebar-lg .col-3.col-md-4.pe-2.pe-md-0 {
   padding: 0;
 }
 
-
-
 @media (max-width: 576px) {
   h1.h1.display-md-4.display-3-lg.fw-bold.mt-2.text-white {
     font-size: 24px;
-}
+  }
 }
 
 @media (max-width: 445px) {
   h1.h1.display-md-4.display-3-lg.fw-bold.mt-2.text-white {
     font-size: 18px;
-}
+  }
 }
 
-
-@media (max-width: 400px)  {
+@media (max-width: 400px) {
   h1.h1.display-md-4.display-3-lg.fw-bold.mt-2.text-white {
     font-size: 16px;
-}
+  }
 }
 
-
-@media (min-width: 576px) and (max-width: 660px){
+@media (min-width: 576px) and (max-width: 660px) {
   h1.h1.display-md-4.display-3-lg.fw-bold.mt-2.text-white {
     font-size: 24px;
+  }
 }
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Todo: End Main */
 
