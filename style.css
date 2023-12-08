@@ -8,7 +8,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-family: "Poppins", sans-serif;
-  background-color: red;
+
 }
 
 a {
@@ -150,13 +150,25 @@ header.header {
 
 /* Thiết lập kích thước của thanh cuộn dọc (vertical scrollbar) */
 .navication ul::-webkit-scrollbar {
-  width: 6px; /* Kích thước chiều rộng của thanh cuộn */
+  width: 10px;
+  height: 5px;
+}
+
+.navication ul::-webkit-scrollbar-track{
+  background-color:rgb(230, 230, 230);
+  border-radius: 10px;
+  width: 10px !important;
+  color: #4f46e5;
+
 }
 
 /* Thiết lập kích thước của thanh cuộn ngang (horizontal scrollbar) */
-.navication ul::-webkit-scrollbar {
-  height: 6px; /* Kích thước chiều cao của thanh cuộn */
-}
+.navication ul::-webkit-scrollbar-thumb {
+    background: rgb(160, 160, 160); 
+    border-radius: 10px;
+    height: 20px !important;
+    width: 10px !important;
+  }
 
 .user-main {
   position: relative;
@@ -635,6 +647,7 @@ footer .logo {
   height: 170px;
 }
 
+
 .gif-qc {
   position: fixed;
   width: 100%;
@@ -647,9 +660,6 @@ footer .logo {
   display: none;
 }
 
-.col-md-6.pb-05.pt-05.pe-md-05 {
-  /* height: fit-content; */
-}
 
 .gif-qc img {
   height: 100%;
@@ -657,6 +667,16 @@ footer .logo {
 }
 
 /* Todo: End Advertisement */
+/* Todo: Style bên trái ảnh để sat viền */
+.col-lg-6.main-detal-news .col-3.col-md-4.pe-2.pe-md-0 {
+  padding-left: 0 !important;
+}
+
+.col-lg-6.main-detal-news .col-9.col-md-8 {
+  padding-left: 0 !important;
+}
+
+
 
 /* Todo: Rreponsive */
 

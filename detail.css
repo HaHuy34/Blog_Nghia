@@ -12,7 +12,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #000 !important;
 }
 
 .container {
@@ -53,13 +53,14 @@ ul li {
   gap: 15px;
   font-size: 15px;
   width: 100%;
-  overflow-x: auto;
+  overflow: auto;
   margin: 0;
   padding: 0;
 }
 
 .name-nav-header {
-  white-space: nowrap; /* Ngăn các mục xuống dòng */
+  white-space: nowrap; 
+  /* Ngăn các mục xuống dòng */
   font-weight: 600;
 }
 
@@ -76,14 +77,33 @@ ul li {
 }
 
 /* Thiết lập kích thước của thanh cuộn dọc (vertical scrollbar) */
+/* .navication ul::-webkit-scrollbar {
+  width: 6px; 
+  background-color: red;
+  cursor: pointer;
+
+  height: 4px;
+  /* Kích thước chiều rộng của thanh cuộn */
 .navication ul::-webkit-scrollbar {
-  width: 6px; /* Kích thước chiều rộng của thanh cuộn */
+  width: 10px;
+  height: 5px;
+}
+
+.navication ul::-webkit-scrollbar-track{
+  background-color:rgb(230, 230, 230);
+  border-radius: 10px;
+  width: 10px !important;
+  color: #4f46e5;
+
 }
 
 /* Thiết lập kích thước của thanh cuộn ngang (horizontal scrollbar) */
-.navication ul::-webkit-scrollbar {
-  height: 6px; /* Kích thước chiều cao của thanh cuộn */
-}
+.navication ul::-webkit-scrollbar-thumb {
+    background: rgb(160, 160, 160); 
+    border-radius: 10px;
+    height: 20px !important;
+    width: 10px !important;
+  }
 
 .user-main {
   position: relative;
@@ -340,6 +360,12 @@ h3.card-title.h6.h5-sm.h6-md a {
 .col-md-4.end-sidebar-lg .col-3.col-md-4.pe-2.pe-md-0 {
   padding: 0;
 }
+
+/* Todo: Add */
+.comment-form .btn-primary {
+  margin-top: 20px;
+}
+
 
 @media (max-width: 576px) {
   h1.h1.display-md-4.display-3-lg.fw-bold.mt-2.text-white {
