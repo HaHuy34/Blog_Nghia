@@ -8,7 +8,6 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-family: "Poppins", sans-serif;
-
 }
 
 a {
@@ -37,6 +36,10 @@ ul li {
 .header-main-top i {
   font-size: 20px;
   cursor: pointer;
+}
+
+.header-main-top img {
+  width: 170px;
 }
 
 .search-box {
@@ -154,21 +157,20 @@ header.header {
   height: 5px;
 }
 
-.navication ul::-webkit-scrollbar-track{
-  background-color:rgb(230, 230, 230);
+.navication ul::-webkit-scrollbar-track {
+  background-color: rgb(230, 230, 230);
   border-radius: 10px;
   width: 10px !important;
   color: #4f46e5;
-
 }
 
 /* Thiết lập kích thước của thanh cuộn ngang (horizontal scrollbar) */
 .navication ul::-webkit-scrollbar-thumb {
-    background: rgb(160, 160, 160); 
-    border-radius: 10px;
-    height: 20px !important;
-    width: 10px !important;
-  }
+  background: rgb(160, 160, 160);
+  border-radius: 10px;
+  height: 20px !important;
+  width: 10px !important;
+}
 
 .user-main {
   position: relative;
@@ -463,12 +465,12 @@ a:focus {
 }
 .footer {
   padding: 100px 0px 0px;
-  background-color: #030a16;
+  background-color: #1d2a57;
 }
 
 .footer .widget1 p {
   font-size: 16px;
-  color: rgba(255, 255, 255, 0.6);
+  color: #fff;
   margin-top: 26px;
 }
 
@@ -560,7 +562,7 @@ footer .logo {
 
 .footer .widget2 .media span {
   font-size: 12px;
-  color: #ffb606;
+  color: #fff;
   text-transform: uppercase;
   margin-top: 15px;
   display: block;
@@ -573,16 +575,14 @@ footer .logo {
 .footer .widget3 ul li a,
 .footer .widget4 ul li a {
   font-size: 16px;
-  color: rgba(255, 255, 255, 0.6);
   text-transform: capitalize;
   margin-bottom: 13px;
   display: block;
 }
 
-.footer .widget3 ul li a:hover,
-.footer .widget4 ul li a:hover,
-.footer .widget2 a:hover p {
-  color: #ffb606;
+.widget3 a,
+.widget4 a {
+  color: #fff !important;
 }
 
 .footer .widget3 h5 {
@@ -607,7 +607,7 @@ footer .logo {
 }
 
 .copyRightArea p {
-  color: rgba(255, 255, 255, 0.6);
+  color: #fff;
 }
 /* Todo: End Footer */
 
@@ -647,7 +647,6 @@ footer .logo {
   height: 170px;
 }
 
-
 .gif-qc {
   position: fixed;
   width: 100%;
@@ -660,7 +659,6 @@ footer .logo {
   display: none;
 }
 
-
 .gif-qc img {
   height: 100%;
   width: 100%;
@@ -668,15 +666,6 @@ footer .logo {
 
 /* Todo: End Advertisement */
 /* Todo: Style bên trái ảnh để sat viền */
-.col-lg-6.main-detal-news .col-3.col-md-4.pe-2.pe-md-0 {
-  padding-left: 0 !important;
-}
-
-.col-lg-6.main-detal-news .col-9.col-md-8 {
-  padding-left: 0 !important;
-}
-
-
 
 /* Todo: Rreponsive */
 
@@ -721,5 +710,12 @@ footer .logo {
 @media (max-width: 992px) {
   .main-detal-news {
     margin-top: 20px;
+  }
+  .col-lg-6.main-detal-news .col-3.col-md-4.pe-2.pe-md-0 {
+    padding-left: 0 !important;
+  }
+
+  .col-lg-6.main-detal-news .col-9.col-md-8 {
+    padding-left: 0 !important;
   }
 }
