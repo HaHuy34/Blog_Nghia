@@ -15,6 +15,12 @@ a {
   color: #000 !important; /* Thêm !important ở dòng này nhá*/
 }
 
+.image-wrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .container {
   max-width: 1200px;
   padding: 0 16px;
@@ -229,6 +235,8 @@ header.header {
 
 .image-wrapper {
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .main-text-title {
@@ -238,6 +246,13 @@ header.header {
   color: #ffff;
 }
 
+.main-text-title-ts {
+  position: absolute;
+  bottom: 110%;
+  left: 20px;
+  color: #000000;
+}
+
 .content-breaking {
   font-size: 14px;
   margin-left: 20px;
@@ -245,7 +260,8 @@ header.header {
 
 .featured-1 img {
   width: 100% !important;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
 .col-md-6.pt-05.ps-md-05 {
@@ -307,7 +323,8 @@ span.d-none.d-sm-inline.me-1 {
 
 .card-full img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
 article.card.card-full.hover-a.mb-4 {
@@ -586,7 +603,7 @@ footer .logo {
 
 .widget3 a,
 .widget4 a {
-  color: #000000 ;
+  color: #000000;
 }
 .widget-footer a:hover {
   color: #1fa7f1;
