@@ -316,6 +316,15 @@ span.bg-primary.text-white {
   padding: 0 !important;
 }
 
+.row.newsbox .col-6 {
+  height: 153px;
+}
+
+.ratio_110-77.image-wrapper {
+  width: unset;
+  height: unset;
+}
+
 span.d-none.d-sm-inline.me-1 {
   color: #006aff;
   font-weight: 600;
@@ -742,5 +751,21 @@ footer .logo {
 
   .col-lg-6.main-detal-news .col-9.col-md-8 {
     padding-left: 0 !important;
+  }
+}
+
+@media (min-width: 992px) {
+  article.card.card-full.hover-a.mb-4 .col-3.col-md-4.pe-2.pe-md-0 {
+    padding: 0;
+    height: 66px;
+    overflow: hidden;
+  }
+}
+
+
+@media (max-width: 992px) {
+  article.card.card-full.hover-a.mb-4 .col-3.col-md-4.pe-2.pe-md-0 {
+    height: 66px;
+    overflow: hidden;
   }
 }
