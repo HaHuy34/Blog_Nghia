@@ -22,7 +22,7 @@ a {
 } */
 
 .col-md-6.pb-05.pt-05.pe-md-05 {
-  height: 323px;
+  height: 406px;
 }
 
 .img-cart,
@@ -257,6 +257,11 @@ header.header {
   overflow: hidden;
 }
 
+.row.py-2.bre-main {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 .main-text-title {
   position: absolute;
   bottom: 4%;
@@ -335,7 +340,7 @@ span.bg-primary.text-white {
 }
 
 .row.newsbox .col-6 {
-  height: 153px;
+  height: 194px;
   padding-left: 0;
 }
 

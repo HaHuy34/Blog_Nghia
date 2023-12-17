@@ -120,7 +120,7 @@ ul li {
   top: 50px;
   background-color: #fff;
   border-radius: 5px;
-  padding: 8px;
+  padding: 8px 40px 8px 8px;
   z-index: 999;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   transition: all 0.2s;
@@ -165,10 +165,24 @@ ul li {
   width: 100%;
 }
 
+
+
+button.btn.btn-primary.mt-2 {
+    display: flex;
+    align-items: center;
+}
+
 .my-3.text-light.small {
   display: flex;
   flex-direction: row;
-  gap: 20px px;
+  font-size: 16px;
+  gap: 20px;
+}
+
+.bxs-bookmark-alt-plus {
+  font-size: 16px;
+  margin-top: 2px;
+  margin-right: 5px;
 }
 
 .entry-footer {
