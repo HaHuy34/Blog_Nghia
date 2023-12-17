@@ -16,13 +16,17 @@
 // // Đặt thời gian thay đổi liên kết ảnh sau mỗi 3 giây
 // setInterval(changeImage, 2000);
 
+
+
+
+
 var closeButton1 = document.getElementById("closeAds1");
 var closeButton2 = document.getElementById("closeAds2");
 var closeButton3 = document.getElementById("closeAds3");
 
-var imgElement1 = document.querySelector(".advertisement01 .fixed-image");
-var imgElement2 = document.querySelector(".advertisement02 .fixed-image");
-var imgElement3 = document.querySelector(".gif-qc .fixed-image");
+var imgElement1 = document.querySelector(".advertisement01");
+var imgElement2 = document.querySelector(".advertisement02");
+var imgElement3 = document.querySelector(".gif-qc");
 
 closeButton1.addEventListener("click", function () {
   imgElement1.style.display = "none";
@@ -36,14 +40,19 @@ closeButton3.addEventListener("click", function () {
   imgElement3.style.display = "none";
 });
 
+
+
+
 // Làm ẩn hiện Ads
 document.addEventListener("DOMContentLoaded", function () {
-  var gifQC = document.querySelector(".gif-qc");
-  var adsMain01 = document.querySelector(".advertisement01");
-  var adsMain02 = document.querySelector(".advertisement02");
-  var footer = document.querySelector(".footer");
-  var footerTop = footer.offsetTop;
-  var isFixed = true;
+  const gifQC = document.querySelector(".gif-qc");
+  const adsMain01 = document.querySelector(".advertisement01");
+  const adsMain02 = document.querySelector(".advertisement02");
+  const footer = document.querySelector(".footer");
+  const footerTop = footer.offsetTop;
+  let isFixed = true;
+
+  const lastNewParent = document.querySelector(".lastest-new-parent-1");
 
   window.addEventListener("scroll", function () {
     var scrollDistance = window.scrollY;
@@ -77,3 +86,20 @@ var scrollAbs = 700;
     }
   });
 });
+
+// document.addEventListener("DOMContentLoaded", function() {
+//   var scrollDiv = document.getElementById("scrollDiv");
+//   const lastNewParent = document.querySelector(".lastest-new-parent-1");
+//   window.addEventListener("scroll", function() {
+//     var scrollPosition = window.scrollY;
+
+//     // Kiểm tra nếu scroll đến 200px thì ẩn div
+//     if (scrollPosition >= 200) {
+//       lastNewParent.style.display = "none";
+//     } else {
+//       lastNewParent.style.display = "block";
+//     }
+//   });
+// });
+
+
