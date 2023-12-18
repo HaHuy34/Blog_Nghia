@@ -349,7 +349,7 @@ span.bg-primary.text-white {
 
 .ratio_110-77.image-wrapper {
   width: unset;
-  height: unset;
+  /* height: unset; */
 }
 
 span.d-none.d-sm-inline.me-1 {
@@ -385,6 +385,13 @@ h3.card-title-child.h6.h5-sm.h6-lg a {
 /* ------------------- */
 
 /* Start col-md-4 */
+
+/* .lastest-new-parent-1 {
+  top:0;
+  position: fixed;
+
+} */
+
 .block-title-4 {
   position: relative;
   margin-bottom: 1.5rem;

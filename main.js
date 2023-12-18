@@ -16,6 +16,10 @@
 // // Đặt thời gian thay đổi liên kết ảnh sau mỗi 3 giây
 // setInterval(changeImage, 2000);
 
+
+
+
+
 var closeButton1 = document.getElementById("closeAds1");
 var closeButton2 = document.getElementById("closeAds2");
 var closeButton3 = document.getElementById("closeAds3");
@@ -36,7 +40,11 @@ closeButton3.addEventListener("click", function () {
   imgElement3.style.display = "none";
 });
 
+
+
+
 // Làm ẩn hiện Ads
+<<<<<<< HEAD
 // Làm ẩn hiện Ads
 // document.addEventListener("DOMContentLoaded", function () {
 //   const gifQC = document.querySelector(".gif-qc");
@@ -77,10 +85,67 @@ closeButton3.addEventListener("click", function () {
 //       adsMain02.style.position = "fixed";
 //       adsMain02.style.transform = "translateY(0)";
 //       isFixed = true;
+=======
+document.addEventListener("DOMContentLoaded", function () {
+  const gifQC = document.querySelector(".gif-qc");
+  const adsMain01 = document.querySelector(".advertisement01");
+  const adsMain02 = document.querySelector(".advertisement02");
+  const footer = document.querySelector(".footer");
+  const footerTop = footer.offsetTop;
+  let isFixed = true;
+
+  const lastNewParent = document.querySelector(".lastest-new-parent-1");
+
+  window.addEventListener("scroll", function () {
+    var scrollDistance = window.scrollY;
+    var distanceToFooter = footerTop - scrollDistance;
+    var scrollThreshold = 500;
+var scrollAbs = 700;
+    if (
+      distanceToFooter <= scrollThreshold &&
+      distanceToFooter <= scrollAbs &&
+      isFixed
+    ) {
+      gifQC.style.position = "absolute";
+      gifQC.style.transform = "translateY(" + -distanceToFooter + "px)";
+      adsMain01.style.position = "absolute";
+      adsMain01.style.transform = "translateY(" + -distanceToFooter + "px)";
+      adsMain02.style.position = "absolute";
+      adsMain02.style.transform = "translateY(" + -distanceToFooter + "px)";
+      isFixed = false;
+    } else if (
+      distanceToFooter > scrollThreshold &&
+      distanceToFooter > scrollAbs &&
+      !isFixed
+    ) {
+      gifQC.style.position = "fixed";
+      gifQC.style.transform = "translateY(0)";
+      adsMain01.style.position = "fixed";
+      adsMain01.style.transform = "translateY(0)";
+      adsMain02.style.position = "fixed";
+      adsMain02.style.transform = "translateY(0)";
+      isFixed = true;
+    }
+  });
+});
+
+// document.addEventListener("DOMContentLoaded", function() {
+//   var scrollDiv = document.getElementById("scrollDiv");
+//   const lastNewParent = document.querySelector(".lastest-new-parent-1");
+//   window.addEventListener("scroll", function() {
+//     var scrollPosition = window.scrollY;
+
+//     // Kiểm tra nếu scroll đến 200px thì ẩn div
+//     if (scrollPosition >= 200) {
+//       lastNewParent.style.display = "none";
+//     } else {
+//       lastNewParent.style.display = "block";
+>>>>>>> 313191e6661c472fc29687cae960375d3899e61f
 //     }
 //   });
 // });
 
+<<<<<<< HEAD
 //  var lastestNewParent = document.querySelector(".lastest-new-parent-1");
 
 //  // Thêm sự kiện lắng nghe cuộn
@@ -94,3 +159,6 @@ closeButton3.addEventListener("click", function () {
 //      lastestNewParent.classList.remove("fixed");
 //    }
 //  });
+=======
+
+>>>>>>> 313191e6661c472fc29687cae960375d3899e61f
