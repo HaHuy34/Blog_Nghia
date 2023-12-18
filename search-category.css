@@ -53,3 +53,9 @@ aside.card-search-main.row {
 aside.card-search-main.row:last-child {
     border: none;
 }
+
+@media (max-width: 768px) {
+    aside.qc {
+        display: none;
+    }
+}
