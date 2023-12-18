@@ -111,9 +111,6 @@ ul li {
   width: 100%;
 }
 
-.search-main {
-}
-
 .inp-lable {
   margin-right: 15px;
 }
@@ -339,6 +336,12 @@ span.bg-primary.text-white {
   padding: 0 !important;
 }
 
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+} 
 .row.newsbox .col-6 {
   height: 194px;
   padding-left: 0;

@@ -20,11 +20,11 @@ var closeButton1 = document.getElementById("closeAds1");
 var closeButton2 = document.getElementById("closeAds2");
 var closeButton3 = document.getElementById("closeAds3");
 
-var imgElement1 = document.querySelector(".advertisement01 .fixed-image");
-var imgElement2 = document.querySelector(".advertisement02 .fixed-image");
-var imgElement3 = document.querySelector(".gif-qc .fixed-image");
+var imgElement1 = document.querySelector(".advertisement01");
+var imgElement2 = document.querySelector(".advertisement02");
+var imgElement3 = document.querySelector(".gif-qc");
 
-closeButton1.addEventListener("click", function () {
+closeButton1.addEventListener("click", function  () {
   imgElement1.style.display = "none";
 });
 
@@ -37,43 +37,60 @@ closeButton3.addEventListener("click", function () {
 });
 
 // Làm ẩn hiện Ads
-document.addEventListener("DOMContentLoaded", function () {
-  var gifQC = document.querySelector(".gif-qc");
-  var adsMain01 = document.querySelector(".advertisement01");
-  var adsMain02 = document.querySelector(".advertisement02");
-  var footer = document.querySelector(".footer");
-  var footerTop = footer.offsetTop;
-  var isFixed = true;
+// Làm ẩn hiện Ads
+// document.addEventListener("DOMContentLoaded", function () {
+//   const gifQC = document.querySelector(".gif-qc");
+//   const adsMain01 = document.querySelector(".advertisement01");
+//   const adsMain02 = document.querySelector(".advertisement02");
+//   const footer = document.querySelector(".footer");
+//   const footerTop = footer.offsetTop;
+//   let isFixed = true;
 
-  window.addEventListener("scroll", function () {
-    var scrollDistance = window.scrollY;
-    var distanceToFooter = footerTop - scrollDistance;
-    var scrollThreshold = 500;
-var scrollAbs = 700;
-    if (
-      distanceToFooter <= scrollThreshold &&
-      distanceToFooter <= scrollAbs &&
-      isFixed
-    ) {
-      gifQC.style.position = "absolute";
-      gifQC.style.transform = "translateY(" + -distanceToFooter + "px)";
-      adsMain01.style.position = "absolute";
-      adsMain01.style.transform = "translateY(" + -distanceToFooter + "px)";
-      adsMain02.style.position = "absolute";
-      adsMain02.style.transform = "translateY(" + -distanceToFooter + "px)";
-      isFixed = false;
-    } else if (
-      distanceToFooter > scrollThreshold &&
-      distanceToFooter > scrollAbs &&
-      !isFixed
-    ) {
-      gifQC.style.position = "fixed";
-      gifQC.style.transform = "translateY(0)";
-      adsMain01.style.position = "fixed";
-      adsMain01.style.transform = "translateY(0)";
-      adsMain02.style.position = "fixed";
-      adsMain02.style.transform = "translateY(0)";
-      isFixed = true;
-    }
-  });
-});
+//   const lastNewParent = document.querySelector(".lastest-new-parent-1");
+
+//   window.addEventListener("scroll", function () {
+//     var scrollDistance = window.scrollY;
+//     var distanceToFooter = footerTop - scrollDistance;
+//     var scrollThreshold = 500;
+// var scrollAbs = 700;
+//     if (
+//       distanceToFooter <= scrollThreshold &&
+//       distanceToFooter <= scrollAbs &&
+//       isFixed
+//     ) {
+//       gifQC.style.position = "absolute";
+//       gifQC.style.transform = "translateY(" + -distanceToFooter + "px)";
+//       adsMain01.style.position = "absolute";
+//       adsMain01.style.transform = "translateY(" + -distanceToFooter + "px)";
+//       adsMain02.style.position = "absolute";
+//       adsMain02.style.transform = "translateY(" + -distanceToFooter + "px)";
+//       isFixed = false;
+//     } else if (
+//       distanceToFooter > scrollThreshold &&
+//       distanceToFooter > scrollAbs &&
+//       !isFixed
+//     ) {
+//       gifQC.style.position = "fixed";
+//       gifQC.style.transform = "translateY(0)";
+//       adsMain01.style.position = "fixed";
+//       adsMain01.style.transform = "translateY(0)";
+//       adsMain02.style.position = "fixed";
+//       adsMain02.style.transform = "translateY(0)";
+//       isFixed = true;
+//     }
+//   });
+// });
+
+//  var lastestNewParent = document.querySelector(".lastest-new-parent-1");
+
+//  // Thêm sự kiện lắng nghe cuộn
+//  window.addEventListener("scroll", function () {
+//    // Kiểm tra vị trí cuộn
+//    if (window.scrollY >= 300) {
+//      // Nếu đã cuộn qua 300px, thêm lớp 'fixed'
+//      lastestNewParent.classList.add("fixed");
+//    } else {
+//      // Nếu chưa cuộn qua 300px, xóa lớp 'fixed'
+//      lastestNewParent.classList.remove("fixed");
+//    }
+//  });
