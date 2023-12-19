@@ -17,7 +17,22 @@
 // setInterval(changeImage, 2000);
 
 
-
+$(".owl-carousel").owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 2,
+    },
+    1000: {
+      items: 3,
+    },
+  },
+});
 
 
 var closeButton1 = document.getElementById("closeAds1");
@@ -44,7 +59,7 @@ closeButton3.addEventListener("click", function () {
 
 
 // Làm ẩn hiện Ads
-<<<<<<< HEAD
+
 // Làm ẩn hiện Ads
 // document.addEventListener("DOMContentLoaded", function () {
 //   const gifQC = document.querySelector(".gif-qc");
@@ -75,8 +90,7 @@ closeButton3.addEventListener("click", function () {
 //       isFixed = false;
 //     } else if (
 //       distanceToFooter > scrollThreshold &&
-//       distanceToFooter > scrollAbs &&
-//       !isFixed
+//       distanceToFooter > scrollAbs && !isFixed
 //     ) {
 //       gifQC.style.position = "fixed";
 //       gifQC.style.transform = "translateY(0)";
@@ -85,7 +99,7 @@ closeButton3.addEventListener("click", function () {
 //       adsMain02.style.position = "fixed";
 //       adsMain02.style.transform = "translateY(0)";
 //       isFixed = true;
-=======
+
 document.addEventListener("DOMContentLoaded", function () {
   const gifQC = document.querySelector(".gif-qc");
   const adsMain01 = document.querySelector(".advertisement01");
@@ -140,12 +154,11 @@ var scrollAbs = 700;
 //       lastNewParent.style.display = "none";
 //     } else {
 //       lastNewParent.style.display = "block";
->>>>>>> 313191e6661c472fc29687cae960375d3899e61f
+
 //     }
 //   });
 // });
 
-<<<<<<< HEAD
 //  var lastestNewParent = document.querySelector(".lastest-new-parent-1");
 
 //  // Thêm sự kiện lắng nghe cuộn
@@ -159,6 +172,6 @@ var scrollAbs = 700;
 //      lastestNewParent.classList.remove("fixed");
 //    }
 //  });
-=======
 
->>>>>>> 313191e6661c472fc29687cae960375d3899e61f
+
+
