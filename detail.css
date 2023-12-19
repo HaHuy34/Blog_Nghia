@@ -71,6 +71,8 @@ ul li {
   font-weight: 600;
 }
 
+
+
 .owl-carousel.owl-theme.owl-loaded.owl-drag .owl-nav,
 .owl-carousel.owl-theme.owl-loaded.owl-drag .owl-dots
 {
@@ -254,6 +256,24 @@ h4.h5.border-primary.border-2 {
 
 .image-slide-main {
   display: flex;
+}
+
+.image-slide  {
+  position: relative;
+}
+
+.slide-img-detail {
+  position: absolute;
+  position: absolute;
+  top: 70%;
+  width: 100%;
+  left: 40%;
+  transform: translate(-30%,-50%);
+}
+
+.cart-slide-time {
+  color: #fff;
+  font-size: 13px;
 }
 
 .image-slide img {
