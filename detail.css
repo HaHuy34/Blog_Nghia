@@ -71,6 +71,12 @@ ul li {
   font-weight: 600;
 }
 
+.owl-carousel.owl-theme.owl-loaded.owl-drag .owl-nav,
+.owl-carousel.owl-theme.owl-loaded.owl-drag .owl-dots
+{
+  display: none;
+}
+
 .bx-home,
 .bxs-user-circle {
   font-size: 19px;
